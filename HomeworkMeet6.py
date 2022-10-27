@@ -253,36 +253,60 @@
 # Ex. 7
 
 
-class to_do_list:
-    to_do = {None: None}
-
-    def add_task(self):
-        to_do_list.to_do = {"make_clean": "you have to vacuum, wipe the dust, air the room"}
-        to_do_list.to_do.update({"make_shower": "Go to bathroom and wash your body"})
-
-    def end_task(self):
-        to_do_list.to_do.pop("make_shower")
-
-    def print_to_do(self):
-        for x in to_do_list.to_do:
-            print(f'You have to do : {x}.')
-
-    def details_to_do(self):
-        if "make_dinner" not in to_do_list.to_do:
-            x = input('Do you want to add a new task ? \n')
-            if x == 'yes':
-                details1 = input('Please insert the task name :\n')
-                details2 = input('Please insert the task description :\n')
-                to_do_list.to_do.update({details1: details2})
-                print(f'You have to do : {to_do_list.to_do.items()}')
-            else:
-                print('Goodbye')
-        else:
-            print(f'This task already exists.')
-
-
-to_do_list = to_do_list()
-to_do_list.add_task()
-to_do_list.end_task()
-to_do_list.print_to_do()
-to_do_list.details_to_do()
+# class to_do_list:
+#
+#     to_do = {
+#
+#     }
+#
+#     def add_task(self):
+#         to_do_list.to_do["make_clean"] = "you have to vacuum, wipe the dust, air the room"
+#         to_do_list.to_do["make_shower"] = "Go to bathroom and wash your body"
+#
+#     def end_task(self, task):
+#         self.task = task.casefold()
+#
+#         if self.task in self.to_do:
+#             self.to_do.pop(self.task)
+#             print(f'The task {self.task} has been completed.')
+#         else:
+#             print(f'The task {self.task} does not exists in list of tasks.')
+#
+#     def details_to_do(self):
+#         print(f'To do list: {self.to_do.keys()}')
+#
+#     def show_todo_list(self):
+#         for key, value in self.to_do.items():
+#             print(key, ' : ', value)
+#
+#     def show_details(self, new_task):
+#         self.new_task = new_task
+#         if self.new_task not in self.to_do:
+#             print(f'The task {self.new_task} does not exists in list of tasks, do you want add this task ?')
+#             self.answear = input('Please answear (yes/no) :')
+#             if self.answear == 'no':
+#                 print('Goodbye')
+#             else:
+#                 self.details = input('Please enter details for the new task : ')
+#                 self.to_do[new_task] = self.details
+#
+#
+# to_do_list = to_do_list()
+#
+# to_do_list.show_todo_list()
+# to_do_list.add_task()
+# to_do_list.details_to_do()
+# print(' ')
+# to_do_list.show_todo_list()
+# print(' ')
+# to_do_list.end_task('home')
+# print(' ')
+# to_do_list.end_task('make_clean')
+# to_do_list.details_to_do()
+# print(' ')
+# to_do_list.show_todo_list()
+# print(' ')
+# to_do_list.show_details('dog')
+# to_do_list.show_todo_list()
+# print(' ')
+# to_do_list.details_to_do()
