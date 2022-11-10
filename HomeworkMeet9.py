@@ -104,8 +104,6 @@ class Test(TestCase):
         self.assertEqual(actual, expected, 'The Page is not open correct.')
 
     def test12(self):
-        global split
-        succes = (By.XPATH, '//div//div//div[@class="flash success"]')
         text_of_website = self.chrome.find_element(By.XPATH, '//div//h4').text
         x = text_of_website.split()
         for split in x:
