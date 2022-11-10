@@ -5,7 +5,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from Screenshot import Screenshot
 from selenium.webdriver.support.select import Select
-
 s = Service(ChromeDriverManager().install())
 
 # selector by link text
@@ -20,7 +19,7 @@ s = Service(ChromeDriverManager().install())
 # chrome = webdriver.Chrome(service=s)
 # chrome.maximize_window()
 # chrome.get('https://the-internet.herokuapp.com/')
-# chrome.find_element(By.LINK_TEXT, 'Broken Images').click()
+# chrome.find_element(By.LINK_TEXT, 'Form Authentication').click()
 # sleep(2)
 # chrome.quit()
 # # 3
@@ -229,7 +228,8 @@ s = Service(ChromeDriverManager().install())
 # function
 # class choose:
 #     element = None
-
+#
+#
 # def choose_element(parameter):
 #     chrome = webdriver.Chrome(service=s)
 #     chrome.get('https://formy-project.herokuapp.com/autocomplete')
