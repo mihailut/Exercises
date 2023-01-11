@@ -19,13 +19,12 @@
 
 # Ex. 3
 
-# list1 = [3, 1, 0, 2]
-# list2 = [6, 5, 4]
-
-# list1.extend(list2)
-# print(list1)
-# list3 = list1 + list2
-# print(list3)
+value = 5
+def func():
+    value = 15
+    print(value)
+func()
+print(value)
 
 
 # Ex. 4
